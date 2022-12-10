@@ -1,4 +1,4 @@
-#include <stdio.>
+#include <stdio.h>
 
 /**
  * main -prints all possible different cominations of three digits

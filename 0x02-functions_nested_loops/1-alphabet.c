@@ -10,5 +10,5 @@ void print_alphabet(void)
 
 	for (lc = 'a'; lc <= 'z'; lc++)
 		_putchar(lc);
-	_putchar('\n')
+	_putchar('\n');
 }

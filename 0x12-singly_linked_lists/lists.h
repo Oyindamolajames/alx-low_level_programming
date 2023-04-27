@@ -1,5 +1,6 @@
 #ifndef _LIST_H
 #define _LIST_H
+#include <stddef.h>
 
 /**
  * struct list_s - singly liked list
@@ -19,5 +20,6 @@ typedef struct list_s
 /* Prototype functions */
 int _putchar(char c);
 size_t print_list(const list_t *h);
+size_t list_len(const list_t *h);
 
 #endif

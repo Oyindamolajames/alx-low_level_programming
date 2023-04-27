@@ -1,4 +1,8 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <string.h>
+
+int _strlen(const char *s);
 
 /**
  * add_node - Adds a new node at the beginning of a list_t list.
@@ -30,4 +34,23 @@ list_t *add_node(list_t **head, const char *str)
 	*head = new_node;
 
 	return (new_node);
+}
+
+/**
+ * _strlen - Computes the length of a string.
+ * @s: A pointer to the first character of the string.
+ *
+ * Return: The length of the string (not including the terminating null byte).
+ */
+int _strlen(const char *s)
+{
+	int len = 0;
+
+	while (*s != '\0')
+	{
+		len++;
+		s++;
+	}
+
+	return (len);
 }
